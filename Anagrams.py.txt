@@ -1,0 +1,27 @@
+# Check if a word is an anagrams 
+# Example:
+# find_anagrams("hello") --> False
+# find_anagrams("racecar") --> True
+
+
+#def find_anagrams(word):
+    # [assignment] Add your code here
+
+ #   return True
+
+Str1= ("Coronavirus")
+Str2=("Carnivorous")
+Str1=Str1.lower()
+Str2=Str2.lower()
+#print(Str2)
+#print(len(Str1))
+#print(len(Str2))
+if(len(Str1)==len(Str2)):
+    sorted_str1=sorted(Str1)
+    sorted_str2=sorted(Str2)
+    if(sorted_str1==sorted_str2):
+        print("Yes, They are Anagram")
+    else:
+        print("No, They are not Anagram")
+else:
+    print("Can not be sorted")
